@@ -2,7 +2,9 @@
     
     color:rgb(256, 256, 256, 0.7);
     
-    box-sizing: border-box;   
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    
 }
 nav{
     display:flex;
@@ -111,7 +113,8 @@ strong{
     box-sizing: border-box;
     margin-top: 3px;
     margin-right: 2px;
-    margin-right: 2px;
+    transition: all 1s ease;
+
 }
 .menuItem:hover{
     background-color:rgba(250, 250, 250, 1);
