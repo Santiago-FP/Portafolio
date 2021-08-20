@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <buttom class="menuItem" id="menu">Menu</buttom>
+        <button class="menuItem" id="menu">Menu</button>
         <nav id="nav">
             
-            <a href="home.html" target="Iframe1" class="menuItem">Inicio</a>
+            <!-- <a href="home.html" target="Iframe1" class="menuItem" style="display: none;">Inicio</a> -->
             <a href="aboutme.html" target="Iframe1" class="menuItem">Acerca de mi</a>
             <a href="skills.html" target="Iframe1" class="menuItem">Habilidades</a>
             <a href="samples.html" target="Iframe1" class="menuItem">Proyectos Muestra</a>
@@ -24,21 +24,21 @@
         <iframe name="Iframe1" class="invisible" src=./aboutme.html></iframe> 
 
         <div class="myInfo">
+        
             <img src=./img/mypic.jpg id="mypic" >
-            
+       
             <div class="contact">
                 <ul>
                 <li>Santiago Flores</li>
                 
-                <li>12 34 34 56 78</li>
+                <li><img  src="./icon/phone.png" class="smallIcon darkIcon"> 12 34 34 56 78</li>
                 
-                <li>sanffp@hotmail.com</li>
-                <br>
+                <li><img  src="./icon/email.png" class="smallIcon darkIcon"> sanffp@hotmail.com</li>
                 <li class="social">
                     <a href="https:www.facebook.com" target="_blank"> <img  src="./icon/facebook.png" class="icon"></a>
                     <a href="https:www.instagram.com" target="_blank"> <img src="./icon/instagram.png" class="icon"></a>
                     <a href="https:www.linkedin.com" target="_blank"> <img src="./icon/linkedin.png" class="icon"></a>
-                    <a href="https:www.github.com" target="_blank"> <img src="./icon/github.png" class="icon" id="githubLogo"></a>
+                    <a href="https:www.github.com" target="_blank"> <img src="./icon/github.png" class="icon darkIcon" id="githubLogo"></a>
                     
                 </li>
                 
@@ -52,7 +52,7 @@
 
     
             
-        <script>src="./script/menu.js" </script>
+        <script src= "./script/menu.js"> </script>
 </body>
 
 

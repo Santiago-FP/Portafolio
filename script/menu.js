@@ -1,3 +1,10 @@
+
+function function1(){
+    alert("hola");
+    // menuButton.style.color = "yellow"
+}
+
+const menuButton = document.getElementById("menu");
 const nav = document.getElementById("nav");
-const menu = document.getElementById("menu")
-menu.onclick(function(){document.getElementById("nav").style.display= "flex"})
+
+menuButton.onclick  = function1;
