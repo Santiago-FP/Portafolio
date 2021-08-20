@@ -13,7 +13,7 @@ p{
     background-color: rgba(0,0,0,0.5);
 }
 nav {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
@@ -21,9 +21,11 @@ nav {
     box-sizing: border-box;
     height: 10%;
 }
-.navSmall{
+.showNav{
     display:flex;
+    
 }
+
 body {
     background-image: url(./img/mountain2.jpg);
     background-size:cover;
