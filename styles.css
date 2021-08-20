@@ -1,57 +1,41 @@
-*{
+
+
+*{  margin:0;
+    padding:0;
     color:rgb(256, 256, 256, 0.7);
-    font-size: 4vh;
-        
+    
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
 
     
-   
+}
+p{
+    background-color: rgba(0,0,0,0.5);
+}
+nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: 10%;
+}
+.showNav{
+    display:flex;
     
 }
+
 body {
     background-image: url(./img/mountain2.jpg);
     background-size:cover;
     background-color: black;
     background-repeat: no-repeat;
-}
-div{
-    
-    background-color:rgba(256, 256, 256, 0.1);
-    border: 4px solid rgba(50, 50, 50, 0.5);
-    text-align:left;
-    display:flex;
-    flex-direction:row;
-    margin-top:5px;
-    
-    
+    height:100%;
+    width:100%;
     
 }
 
-}
-.maindiv{
-    flex-direction: column;
-    width:100vw;
-    height:100vh;
-}
-.bigdiv {
-    height:70vh;
-
-}
-.topdiv{
-    max-height: 20vh;
-}
-.bottomdiv{
-    
-    background-color:rgba(0,0,0,0.5);
-    bottom:0px;
-    max-width:100%;
-    display:flex;
-    border:none;
-    border-radius: 10px;
-    
-    
-    
-    
-}
 h1{
     
     
@@ -62,84 +46,164 @@ h1{
     
 }
 iframe{
-    height:60vh;
+    
     width:100%;
-    text-align:center;
+    height:60vh;
+    margin-top: 5px;
+    box-sizing: border-box;
+    
     
     
     
 }
+li{
+    color:cyan;
+    list-style: none;
+    
+    
+}
+ul{
+    padding:auto;
+}
+strong{
+    color:cyan
+}
+/* Classes */
+
 .invisible{
     border:none;
     background-color: rgba(0,0,0,0);
     background-image:none
 }
-a {
-    background-color:rgba(0,0,0,0.5);
-    border:2px solid cyan;
-    padding:4px;
-    margin:1.5%;
-    margin-top:0;
-    margin-bottom:0;
-    border-radius: 5px;
-    display:inline-block;
-    text-align: center;
-    text-decoration: none;
-    width:30%;
-    font-size: 2vw;
-  
-    
-    
-}
+
 #mypic{
-    width: 20vh;
-    height: 20vh;
+    height:20vh;
     margin:3px;
     border:2px solid cyan;
-    border-radius:10px
+    border-radius:10px;
+    aspect-ratio: 1/1;
 }
-li{
-    color:cyan;
-    font-size: 3vh;
-}
-strong{
-    color:cyan
-}
+
 .icon{
-    max-width:30px;
-    max-height:30px
+    width:30px;
+    
+    aspect-ratio: 1/1;
+}
+.smallIcon {
+    width:15px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
 }
 .skillpic{
-    width:30vh;
-    height:30vh;
-    min-height:50px ;
-    min-width:50px;
-    margin:1vw;
+
+    margin:0;
+    aspect-ratio: 1/1;
+    height: 30vh;
+    
 }
-.samples{
+
+.menuItem{
     background-color:rgba(0,0,0,0.5);
     border:2px solid cyan;
     padding:4px;
-    margin:0;
-    margin-top:1%;
-    border-radius: 5px;
-    display:block;
-    text-align: center;
     text-decoration: none;
-    width:95%;
+    border-radius: 5px;
+    width:100%;
+    text-align:center;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-right: 2px;
+    transition: all 1s ease;
 
 }
-@media only screen and (min-width: 700px) {
-    *{
-        font-size: 3vw;
-    }
-    .skillpic{
-        width:21vw;
-        height:21vw;
-        min-height:50px ;
-        min-width:50px;
-        margin:1vw;
+.menuItem:hover{
+    background-color:rgba(250, 250, 250, 1);
+    color:black;
+    
+}
+
+.myInfo {
+    width:100%;
+    height:20%;
+    position:absolute;
+    bottom:0;
+    display:flex;
+    background-color:rgba(0,0,0,0.5);
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+.contact{
+    margin-right: 5%;
+    margin-top:0%;
+}
+.social{
+    list-style: none;
+}
+.skills {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 100%;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menuSamples{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    top:0;
+    flex-wrap: wrap;
+    max-width: 100%;
+    box-sizing: border-box;
+    
+}
+#menu{
+    display:block;
+}  
+.darkIcon{
+    border:1px solid white;
+    background-color: white;
+}
+/* Media Query */
+
+
+@media screen and (min-width:500px) {
+    p{
+        font-size: larger;
     }
     
-  }
-  
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        flex-wrap: nowrap;
+        max-width: 100%;
+        box-sizing: border-box;
+        height: 10%;
+    }
+    
+    .skillpic{
+        height:300px;
+    }
+    
+    #menu{
+        display:none
+    }  
+    
+}
+
+
+
+@media screen and (min-width:1225px){
+    
+    
+    .menuItem{
+        height:50px;
+        padding:10px;
+        
+    }    
+}
